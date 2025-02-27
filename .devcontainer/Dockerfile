@@ -1,1 +1,1 @@
-FROM njavilas/laravel:1.0.2
+FROM njavilas/laravel:1.0.4
