@@ -3,3 +3,6 @@ build:
 
 run:
 	php artisan serve
+
+lint:
+	php-cs-fixer fix .
