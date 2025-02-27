@@ -1,0 +1,30 @@
+{
+	"name": "PHP",
+	"dockerFile": "Dockerfile",
+	"context": "..",
+	"runArgs": [
+		"--network",
+		"host",
+		"--env-file",
+		".env"
+	],
+	"postCreateCommand": "composer install && echo 'Welcome!! Ya puedes trabajar'",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"git.enabled": true,
+				"git.autofetch": true,
+				"git.confirmSync": false
+			},
+			"extensions": [
+				"felixfbecker.php-intellisense",
+				"bmewburn.vscode-intelephense-client",
+				"neilbrayfield.php-docblocker",
+				"junstyle.php-cs-fixer",
+				"esbenp.prettier-vscode"
+			]
+		}
+	},
+	"remoteUser": "vscode"
+}
